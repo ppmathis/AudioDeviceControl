@@ -1,3 +1,0 @@
-[submodule "Libraries/TCLAP"]
-	path = Libraries/TCLAP
-	url = https://github.com/BlueBrain/tclap.git
