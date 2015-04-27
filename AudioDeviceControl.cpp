@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <string>
+#include <tclap\CmdLine.h>
 
 int wmain(int argc, wchar_t* argv[])
 {

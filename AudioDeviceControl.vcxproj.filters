@@ -1,22 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Quelldateien">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Headerdateien">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Ressourcendateien">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Quelldateien\Utilities">
+    <Filter Include="Application">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Application\Utilities">
       <UniqueIdentifier>{fbbc9574-9161-4431-8b80-a6a78983171e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Quelldateien\Common">
+    <Filter Include="Application\Common">
       <UniqueIdentifier>{e6f89b54-410d-4b8d-9bf6-2b97fa720f4c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -24,37 +20,37 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="Formatter.h">
-      <Filter>Quelldateien\Utilities</Filter>
+      <Filter>Application\Utilities</Filter>
     </ClInclude>
     <ClInclude Include="ComHelpers.h">
-      <Filter>Quelldateien\Utilities</Filter>
+      <Filter>Application\Utilities</Filter>
     </ClInclude>
     <ClInclude Include="AudioEndpoint.h">
-      <Filter>Quelldateien\Common</Filter>
+      <Filter>Application\Common</Filter>
     </ClInclude>
     <ClInclude Include="AudioEnumerator.h">
-      <Filter>Quelldateien\Common</Filter>
+      <Filter>Application\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Application\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Application\Utilities</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="AudioEndpoint.cpp">
-      <Filter>Quelldateien\Common</Filter>
+      <Filter>Application\Common</Filter>
     </ClCompile>
     <ClCompile Include="AudioEnumerator.cpp">
-      <Filter>Quelldateien\Common</Filter>
+      <Filter>Application\Common</Filter>
     </ClCompile>
     <ClCompile Include="AudioDeviceControl.cpp">
-      <Filter>Quelldateien\Utilities</Filter>
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Application\Utilities</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
