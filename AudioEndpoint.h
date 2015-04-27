@@ -14,6 +14,9 @@ public:
 	const std::wstring& GetFriendlyName() const { return mFriendlyName; };
 	DWORD GetSamplesPerSec() const { return mSamplesPerSec; };
 	WORD GetBitsPerSample() const { return mBitsPerSample; };
+	WORD GetValidBitsPerSample() const { return mValidBitsPerSample; };
+
+	void SetDeviceFormat(WORD bitsPerSample, WORD validBitsPerSample, DWORD samplesPerSec);
 
 private:
 	AudioEndpoint(const AudioEndpoint& other) = delete;
@@ -26,6 +29,7 @@ private:
 	std::wstring mFriendlyName;
 	DWORD mSamplesPerSec;
 	WORD mBitsPerSample;
+	WORD mValidBitsPerSample;
 
 	void readFriendlyName();
 	void readDeviceFormat();
